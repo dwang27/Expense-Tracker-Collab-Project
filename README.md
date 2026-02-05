@@ -7,17 +7,17 @@ Work in teams of 2-3 students to create a Python program that manages and tracks
 
 ## Team Members & Roles
 
-Daniel:
+Daniel Wang:
 - Implemented adding expenses
 - Implemented viewing all expenses
 - Helped add proper use of comments 
 
-Adrian:
+Adrian Kwok:
 - Implemented calculating total expenses
 - Implemented deleting specific expenses
 - Helped improve code organization
 
-Derek:
+Derek Huang:
 - Helped error handling
 - Set up the GitHub repository (README)
 
