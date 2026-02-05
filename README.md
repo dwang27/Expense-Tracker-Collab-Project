@@ -18,19 +18,18 @@ Adrian:
 - Helped improve code organization
 
 Derek:
-- Implemented error handling
-- Set up the GitHub repository and organized the project structure
+- Helped error handling
+- Set up the GitHub repository (README)
 
 ---
 
 ## Features of the Expense Tracker
 
-- Add new expenses (category, amount, date)
+- Add expenses (category, amount, date)
 - View all added expenses in an organized format
 - Filter expenses by category
 - Calculate total expenses
 - Delete expenses by category and date
-- Error handling for invalid input and empty data
 
 ---
 
@@ -53,7 +52,7 @@ Our group divided the tasks evenly so that everyone contributed equally. Daniel 
 One challenge our group faced was combining different parts of the code into one working program. We solved this by communicating, testing eachothers function separately, and fixing errors together.
 
 ### Enjoy collaborative coding or not?
-Our group enjoyed collaborative coding because each person contributed to the code, which made less work for everybody. Working together helped us learn from each other, solve problems faster, and understand GitHub collaboration better. Overall, teamwork made the project more efficient and enjoyable.
+Our group enjoyed collaborative coding because each person contributed to the code, which made less work for everybody. Working together helped us solve problems faster and understand GitHub collaboration better. Overall, working collaboratively made the project easier and also more enjoyable.
 
 ---
 
