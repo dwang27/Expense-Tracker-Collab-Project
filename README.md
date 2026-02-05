@@ -45,9 +45,6 @@ Derek:
 
 ## Reflection
 
-### Team Roles & Tasks
-Our group divided the tasks evenly so that everyone contributed equally. Daniel worked on adding and viewing the expenses. Adrian worked on calculating the expenses and deleting expenses. Derek handled error handling and set up the GitHub repository (README).
-
 ### Challenges and how it was overcame
 One challenge our group faced was combining different parts of the code into one working program. We solved this by communicating, testing eachothers function separately, and fixing errors together.
 
