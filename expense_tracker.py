@@ -88,22 +88,21 @@ def menu():
     print("Expense Tracker Menu")
     print("1. Add Expense")
     print("2. View All Expenses")
-    print("3. Filter Expenses by Category")
-    print("4. Calculate Total Expenses")
-    print("5. Delete Expense")
-    print("6. Exit")
+    print("3. Calculate Total Expenses")
+    print("4. Delete Expense")
+    print("5. Exit")
 
 while True:
     t = time.localtime()
 while True:
     menu()
-    choice = input("Choose an option (1-6): ")
+    choice = input("Choose an option (1-5): ")
 
     if choice == "1":
         add_expense()
     elif choice == "2":
         view_expenses()
-    elif choice == "6":
+    elif choice == "5":
         print("Goodbye!")
         break
     else:
