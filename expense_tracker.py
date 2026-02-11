@@ -1,18 +1,19 @@
 #List to store dictionaries
 expenses = []
-format = None
 import time
+date_format = None
 def add_expense():
+    global date_format
     #Get expense details from user
     category = input("Enter category: ")
     amount = float(input("Enter amount: "))
     while True: 
-        if format is None:     
-            format = input("which format would you like? (dmy, mdy, ymd): ").upper()
-            if format in ("DMY", "MDY", "YMD"):
+        if date_format is None:     
+            date_format = input("which format would you like? (dmy, mdy, ymd): ").upper()
+            if date_format in ("DMY", "MDY", "YMD"):
                break
             print("invalid format, try again")
-            format = None
+            date_format = None
             continue
         else:
             break
@@ -51,11 +52,11 @@ def add_expense():
         except ValueError:
             print("Sorry, days can't have letters. Try again")
     #using that format to convert the string
-    if format == ("DMY"):
+    if date_format == ("DMY"):
         date = (f"{day}/{month}/{year}")
-    elif format == ("MDY"):
+    elif date_format == ("MDY"):
         date = (f"{month}/{day}/{year}")
-    elif format == ("YMD"):
+    elif date_format == ("YMD"):
         date = (f"{year}/{month}/{day}")
     #Store expense in a dictionary
     expense = {
@@ -75,7 +76,32 @@ def view_expenses():
     if len(expenses) == 0:
         print("No expenses recorded.\n")
         return
+    if date_format == "DMY":
+        expenses.sort(
+            key=lambda exp: (
+                int(exp["date"].split("/")[2]),  
+                int(exp["date"].split("/")[1]),  
+                int(exp["date"].split("/")[0])   
+            )
+        )
 
+    elif date_format == "MDY":
+        expenses.sort(
+            key=lambda exp: (
+                int(exp["date"].split("/")[2]),  
+                int(exp["date"].split("/")[0]),  
+                int(exp["date"].split("/")[1])   
+            )
+        )
+
+    elif date_format == "YMD":
+        expenses.sort(
+            key=lambda exp: (
+                int(exp["date"].split("/")[0]),  
+                int(exp["date"].split("/")[1]),  
+                int(exp["date"].split("/")[2])   
+            )
+        )
     print("\nAll Expenses:")
     for exp in expenses:
         print("Category:", exp["category"],
@@ -83,28 +109,33 @@ def view_expenses():
               "| Date:", exp["date"])
     print()
 
+def total_expenses():
+    #adding all expenses together
+    expenses
+
 
 def menu():
     print("Expense Tracker Menu")
     print("1. Add Expense")
     print("2. View All Expenses")
-    print("3. Filter Expenses by Category")
-    print("4. Calculate Total Expenses")
-    print("5. Delete Expense")
-    print("6. Exit")
+    print("3. Calculate Total Expenses")
+    print("4. Delete Expense")
+    print("5. Exit")
+
 
 while True:
     t = time.localtime()
-while True:
-    menu()
-    choice = input("Choose an option (1-6): ")
-
-    if choice == "1":
-        add_expense()
-    elif choice == "2":
-        view_expenses()
-    elif choice == "6":
-        print("Goodbye!")
-        break
-    else:
-        pass 
+    while True:
+        menu()
+        choice = input("Choose an option (1-5): ")
+        if choice == "1":
+            add_expense()
+        elif choice == "2":
+            view_expenses()
+        elif choice == "3":
+            total_expenses()
+        elif choice == "5":
+            print("Goodbye!")
+            break
+        else:
+            pass 
