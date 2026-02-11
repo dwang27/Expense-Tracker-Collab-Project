@@ -37,7 +37,7 @@ Derek Huang:
 
 1. Make sure that you have a codespace app installed on your computer.
 2. Download or clone this repository.
-3. Open the folder in a codespace.
+3. Open the folder in a source code editor.
 4. Run the file.
 
 
