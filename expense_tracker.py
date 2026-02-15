@@ -6,7 +6,13 @@ def add_expense():
     global date_format
     #Get expense details from user
     category = input("Enter category: ")
-    amount = float(input("Enter amount: "))
+    while True:
+        try:
+            amount = float(input("Enter amount: "))
+            break
+        except ValueError:
+            print("Invalid amount. Please enter a number.")
+    
     while True: 
         if date_format is None:     
             date_format = input("which format would you like? (dmy, mdy, ymd): ").upper()
@@ -169,4 +175,4 @@ while True:
         print("Goodbye!")
         break
     else:
-        pass 
+        print("Invalid choice. Please try again.\n") 
