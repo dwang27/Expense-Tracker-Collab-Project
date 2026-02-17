@@ -3,7 +3,7 @@ A module for keeping track on your expenses.
 
 ## Project Description
 
-Expense tracking system using dictionaries to store expense data such as categories, amounts, and dates. 
+The Expense Tracker is a Python program that allows users to record and manage their expenses. It uses dictionaries to store expense details such as category, amount, and date. Users can also add, view, filter, calculate totals, and delete expenses.
 
 ---
 
