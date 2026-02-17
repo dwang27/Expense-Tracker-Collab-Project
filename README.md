@@ -2,7 +2,8 @@
 A module for keeping track on your expenses.
 
 ## Project Description
-Work in teams of 2-3 students to create a Python program that manages and tracks expenses. Each team will build an expense tracking system using dictionaries to store expense data such as categories, amounts, and dates. The goal is to use python dictionaries to organize and manage data and collaborate on Github.
+
+Expense tracking system using dictionaries to store expense data such as categories, amounts, and dates. 
 
 ---
 
@@ -41,6 +42,16 @@ Derek Huang:
 3. Open the folder in a source code editor.
 4. Run the file.
 
+---
+
+## Technologies Used
+- Python
+- Time module
+
+---
+
+## License
+MIT
 
 ---
 
